@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar javascript</title>
+</head>
+<body>
+    <p id="tes"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+
+    <p id="nama"></p>
+    <p id="npm"></p>
+    <p id="hobi"></p>
+
+    <button onclick="tampil()">panggil function tampil</button>
+    <button onclick="tampilpesan('KIW')">panggil function tampilpesan</button>
+
+    <hr>
+    <input type="text" id="input_pesan" placeholder="ketik pesan disini"><br>
+    <button onclick="simpan_pesan()">Simpan</button>
+    <hr>
+    <ul id="list_pesan">
+
+    </ul>
+    <hr>
+    <!-- inline JS-->
+    <button onclick="alert('hallo semuanya')">tekan tombol ini</button>
+
+    <!-- internal JS-->
+    <script>
+        alert("hari ini belajar javascript");
+        console.log("pesan ini di tampilkan di consule log");
+        document.getElementById("tes").innerHTML = "Selamat pagi dunia tepu-tepu";
+        document.getElementsByClassName("para")[0].innerHTML = "AWKOAWKOAWKOAWOK"
+        document.getElementsByClassName("para")[1].innerHTML = "XiXiXiXiXiXiXiXi"
+    </script>
+
+    <!-- External JS-->
+    <script src="js_hehe.js"></script>
+</body>
+</html>
